@@ -3,14 +3,6 @@ Linux Kernel Driver Collection
 
 A collection of Linux kernel drivers and modules developed for educational purposes to demonstrate various kernel programming concepts.
 
-📋 Table of Contents
---------------------
-
--   [Character Driver](https://claude.ai/chat/a8a42b76-7248-4aec-a6be-752f670aeacc#character-driver)
--   [Additional Modules](https://claude.ai/chat/a8a42b76-7248-4aec-a6be-752f670aeacc#additional-modules)
--   [Requirements](https://claude.ai/chat/a8a42b76-7248-4aec-a6be-752f670aeacc#requirements)
--   [Build and Installation](https://claude.ai/chat/a8a42b76-7248-4aec-a6be-752f670aeacc#build-and-installation)
--   [Usage](https://claude.ai/chat/a8a42b76-7248-4aec-a6be-752f670aeacc#usage)
 
 Character Driver
 ----------------
