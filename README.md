@@ -49,6 +49,29 @@ The `spinlock_variable` is accessed from 4 different contexts:
 
 This demonstrates proper handling of race conditions in multi-threaded and interrupt-driven environments.
 
+USB Driver
+----------
+
+The USB driver (`usb-driver/`) is a basic USB device driver that demonstrates how to integrate with the **Linux USB subsystem**.
+
+### Current Features
+
+- Detects and registers a USB device with specific **Vendor ID / Product ID**
+- Allocates a **minor number** and creates a char device node (`/dev/tgusbX`)
+- Logs device information when plugged/unplugged (`dmesg`)
+- Implements basic `probe` and `disconnect` callbacks
+
+### What Can Be Added / Future Work
+
+1. **File Operations**: Implement `read`/`write` to communicate with the device through `/dev/tgusbX`.
+2. **Endpoint Handling**: Support reading/writing data via USB **bulk** or **interrupt endpoints**.
+3. **HID Parsing (optional)**: For devices like keyboards or mice, parse HID reports to get keycodes or input events.
+4. **User-space Notifications**: Use `poll/select` or async notifications to inform user-space when new data is available.
+5. **Support Multiple Devices**: Extend `usb_device_id` table to handle multiple VID/PID devices.
+6. **Error Handling & Debugging**: Improve logging with `dev_info`/`dev_err` and handle edge cases like device removal during transfer.
+
+---
+
 Additional Modules
 ------------------
 
